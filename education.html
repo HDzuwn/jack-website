@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Education - Jack Garcia</title>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+            background: #000;
+            color: #fff;
+        }
+
+        body {
+            border-left: 12px solid #fff;
+            border-right: 12px solid #fff;
+            animation: borderGlow 3s ease-in-out infinite alternate;
+            text-align: center;
+            padding-top: 60px;
+            min-height: 100vh;
+        }
+
+        @keyframes borderGlow {
+            0% { box-shadow: inset 0 0 15px rgba(255,255,255,0.15), 0 0 20px rgba(255,255,255,0.2); }
+            100% { box-shadow: inset 0 0 25px rgba(255,255,255,0.25), 0 0 35px rgba(255,255,255,0.35); }
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: slideUp 1s ease forwards;
+        }
+
+        .info-box {
+            width: 80%;
+            max-width: 650px;
+            margin: auto;
+            background: rgba(255,255,255,0.05);
+            padding: 30px;
+            border-radius: 12px;
+            backdrop-filter: blur(4px);
+            opacity: 0;
+            animation: fadeIn 1.5s ease forwards 0.4s;
+            line-height: 1.6;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+
+        .back-btn {
+            background: #fff;
+            color: #000;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            transform: scale(1.05);
+            background: #ddd;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>My Education</h1>
+
+    <!-- College Section -->
+    <div class="info-box">
+        <p><strong>College:</strong> Pasadena City College</p>
+        <p><strong>Major:</strong> Electrical Engineering</p>
+
+        <p>I’m currently working toward my Associate’s degree in Electrical Engineering.  
+           I switched some classes to online to give myself more flexibility while working and building my future.</p>
+    </div>
+
+    <!-- High School Section -->
+    <div class="info-box">
+        <h2 style="margin-top:0;">High School</h2>
+        <p><strong>Marshall Fundamental High School — Pasadena, CA</strong></p>
+        <p>I graduated from Marshall Fundamental High School, where I built the foundation for my academic path.  
+           My time there helped shape my interest in engineering, problem‑solving, and hands‑on technical work.</p>
+    </div>
+
+    <!-- Why Engineering -->
+    <div class="info-box">
+        <h2 style="margin-top:0;">Why I Chose Electrical Engineering</h2>
+        <p>I’ve always been drawn to how things work — circuits, engines, electronics, and anything mechanical.  
+           Electrical Engineering gives me the perfect mix of hands‑on problem solving and technical knowledge.</p>
+        <p>I like understanding the systems behind everyday technology and figuring out how to improve or repair them.</p>
+    </div>
+
+    <!-- Skills -->
+    <div class="info-box">
+        <h2 style="margin-top:0;">Skills I'm Building</h2>
+        <p>Through my classes and personal projects, I’m developing skills in:</p>
+        <ul style="text-align:left; display:inline-block;">
+            <li>• Circuit analysis</li>
+            <li>• Electronics fundamentals</li>
+            <li>• Problem‑solving and troubleshooting</li>
+            <li>• Technical communication</li>
+            <li>• Hands‑on engineering work</li>
+        </ul>
+    </div>
+
+    <!-- CSU Pomona Transfer Section -->
+    <div class="info-box" id="csupomona">
+        <h2 style="margin-top:0;">Future Transfer: CSU Pomona</h2>
+        <p>My long‑term academic plan is to transfer to <strong>California State Polytechnic University, Pomona</strong>  
+           to continue my path in Electrical Engineering.</p>
+
+        <p>CSU Pomona has one of the strongest engineering programs in California, with a hands‑on, learn‑by‑doing approach  
+           that fits the way I learn best. I’m preparing by completing the required transfer courses at PCC and staying  
+           focused on building a strong academic foundation.</p>
+
+        <p>Transferring to CSU Pomona is a major step toward my goal of building a stable, long‑term engineering career.</p>
+    </div>
+
+    <!-- Goals -->
+    <div class="info-box">
+        <h2 style="margin-top:0;">My Future Goals</h2>
+        <p>I want to continue building my engineering foundation while gaining real‑world experience through work.  
+           My long‑term goal is to build a stable career in engineering or a related technical field where I can keep learning and growing.</p>
+        <p>I’m focused on staying consistent, improving every semester, and setting myself up for long‑term success.</p>
+    </div>
+
+    <button class="back-btn" onclick="location.href='index.html'">Back to Home</button>
+
+</body>
+</html>
